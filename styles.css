@@ -598,6 +598,63 @@ nav {
 }
 
 /* ============================================
+   ACHIEVEMENTS SECTION
+   ============================================ */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.achievement-card {
+  background: var(--clr-bg-card);
+  padding: var(--space-lg);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 102, 204, 0.15);
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 102, 204, 0.4);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.achievement-icon {
+  font-size: 3rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.achievement-content h3 {
+  color: var(--clr-accent-primary);
+  margin-bottom: var(--space-xs);
+  font-size: 1.4rem;
+}
+
+.achievement-org {
+  color: var(--clr-text-secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: var(--space-sm);
+  font-style: italic;
+}
+
+.achievement-description {
+  color: var(--clr-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ============================================
    ANIMATIONS
    ============================================ */
 @keyframes fadeInUp {
